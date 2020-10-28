@@ -18,3 +18,15 @@
   margin-top: 50px;
   filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1)) opacity(30%);
 }
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.form__header {
+  color: #fff;
+  font-size: 32px;
+  font-family: Tit;
+}
