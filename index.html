@@ -13,20 +13,34 @@
         <img src="img/Logo top.png" alt="logo" />
       </div>
       <main class="content">
-        <section class="column-left">
+        <section class="column">
           <div class="form__register">
             <p class="form__header">Register From</p>
+            <form action="" method="POST" class="register">
+              <div class="inputs">
+                <input type="text" placeholder="username" name="username" required />
+                <input type="password" placeholder="password" name="password" required minlength="8" />
+                <input type="password" placeholder="confirm password" name="confirm" required minlength="8" />
+                <input type="email" placeholder="email" name="email" required />
+                <select name="location" id="location">
+                  <option value="new york">new york</option>
+                  <option value="longdon">london</option>
+                  <option value="berlin">berlink</option>
+                  <option value="warsaw">warsaw</option>
+                </select>
+              </div>
+            </form>
           </div>
           <div class="form__email">
             <p class="form__header">Send Email</p>
           </div>
         </section>
-        <section class="column-right">
+        <section class="column">
           <div class="form__sign">
             <p class="form__header">Sign In Form</p>
           </div>
           <div class="form__recover">
-            <p class="form__header">Recover From</p>
+            <p class="form__header">Recover Form</p>
           </div>
           <div class="form_subscribe">
             <p class="form__header">Subscribe Form</p>
