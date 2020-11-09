@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'TitilliumText22L Lt', sans-serif;
+  font-family: "TitilliumText22L Lt", sans-serif;
 }
 
 .wrapper {
   display: block;
   min-height: 1372;
-  background: url('img/background.jpg') center/cover no-repeat;
+  background: url("img/background.jpg") center/cover no-repeat;
   padding: 5px;
 }
 
@@ -56,9 +56,7 @@ form.register {
 }
 
 .inputs {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  display: block;
 }
 
 .inputs > * {
