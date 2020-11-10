@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "TitilliumText22L Lt", sans-serif;
+  font-family: 'TitilliumText22L Lt', sans-serif;
 }
 
 .wrapper {
   display: block;
   min-height: 1372;
-  background: url("img/background.jpg") center/cover no-repeat;
+  background: url('img/background.jpg') center/cover no-repeat;
   padding: 5px;
 }
 
@@ -37,8 +37,8 @@ main {
 .form__header {
   color: #fff;
   font-size: 32px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
-  margin-bottom: 34px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -48,12 +48,14 @@ form {
   padding: 22px;
   width: 384px;
   margin: 20px;
+  background-clip: padding-box;
+  border-radius: 3px;
+  border: 18px solid rgba(0, 0, 0, 0.205);
 }
 
-form.register {
+/* form.register {
   height: 420px;
-  border-radius: 3px;
-}
+} */
 
 .inputs {
   display: block;
