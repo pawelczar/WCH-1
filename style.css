@@ -24,6 +24,7 @@
 main {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
   margin: 25px;
 }
 
@@ -48,23 +49,33 @@ form {
   padding: 22px;
   width: 384px;
   margin: 20px;
+  margin-bottom: 30px;
   background-clip: padding-box;
   border-radius: 3px;
   border: 18px solid rgba(0, 0, 0, 0.205);
 }
 
+input:not([type='checkbox']) {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+/* label {
+  display: inline-block;
+  width: 100%;
+} */
+
+.email__message {
+  width: 100%;
+  resize: none;
+  margin-bottom: 20px;
+}
+
 /* form.register {
   height: 420px;
 } */
-
-.inputs {
-  display: block;
-}
-
-.inputs > * {
-  height: 40px;
-  margin-bottom: 22px;
-}
 
 /* input [type='text'],
 [type='password'],

@@ -46,14 +46,31 @@
         </div>
         </section>
         <section class="column">
-          <div class="form__sign">
+          <div class="form">
             <p class="form__header">Sign In Form</p>
+            <form class="sign" action="" method="POST">
+              <input classs="username" type="text" name="signuser" placeholder="User Name" required>
+              <input class="passoword" type="password" name="signpass" placeholder="passworld" required >
+              <input type="checkbox" name="remember" id="remember"><label for="remember">Remember Me</label>
+              <button type="submit">Sign In</button>
+            </form>
           </div>
-          <div class="form__recover">
+          <div class="form">
             <p class="form__header">Recover Form</p>
+            <form class="recovery" action="" method="POST">
+              <input class="email" type="email" name="rec_email" placeholder="Enter your email">
+              <input class="tel"  type="tel" name="tel" placeholder="Enter you phone number">
+              <button type="submit">Send</button>
+              <button disabled>Done</button>
+            </form>
           </div>
-          <div class="form_subscribe">
+          <div class="form">
             <p class="form__header">Subscribe Form</p>
+            <form class="subscribe" action="" method="POST">
+              <input class="email" type="email" name="sub_email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+              <button clcass="button__refuse">No, Thanks</button>
+            </form>
           </div>
           <div class="logo__bottom">
             <img src="img/Logo bottom.png" alt="" />
