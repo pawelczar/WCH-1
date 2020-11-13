@@ -17,11 +17,13 @@
           <div class="form">
             <p class="form__header">Register From</p>
             <form action="" method="POST" class="register">
-              <div class="inputs">
-                <input class="user" type="text" placeholder="Username" name="username" required />
-                <input class="passoword" type="password" placeholder="Password" name="password" required minlength="8" />
+              <div class="input"><input class="user" type="text" placeholder="Username" name="username" required /></div>
+              <div class="input"><input class="passoword" type="password" placeholder="Password" name="password" required minlength="8" /></div>
+              <div class="input">
                 <input class="passoword" type="password" placeholder="confirm Password" name="confirm" required minlength="8" />
-                <input class="email" type="email" placeholder="Email" name="email" required />
+              </div>
+              <div class="input"><input class="email" type="email" placeholder="Email" name="email" required /></div>
+              <div class="input">
                 <select class="map" name="location" id="location">
                   <option value="">Your Location</option>
                   <option value="newyork">New York</option>
@@ -29,19 +31,21 @@
                   <option value="berlin">Berlin</option>
                   <option value="warsaw">Warsaw</option>
                 </select>
-                <br />
-                <input type="checkbox" name="terms" id="terms" />
-                <label for="terms">I have read and accepted terms of the use.</label>
-                <button type="submit">Sign Up</button>
               </div>
+              <br />
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms">I have read and accepted terms of the use.</label>
+              <button type="submit">Sign Up</button>
             </form>
           </div>
           <div class="form">
             <p class="form__header">Send Email</p>
             <form action="" method="POST" class="email">
-              <input class="user" name="name" type="text" placeholder="Your Name" required />
-              <input class="email" type="email" name="email" placeholder="Yor email" required />
-              <textarea class="email__message" name="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+              <div class="input"><input class="user" name="name" type="text" placeholder="Your Name" required /></div>
+              <div class="input"><input class="email" type="email" name="email" placeholder="Yor email" required /></div>
+              <div class="input">
+                <textarea class="email__message" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
+              </div>
               <input type="checkbox" name="sendme" id="sendme" /><label for="sendme">Send a copy to my email</label>
               <button type="submit">Send Email</button>
             </form>
@@ -51,8 +55,8 @@
           <div class="form">
             <p class="form__header">Sign In Form</p>
             <form class="sign" action="" method="POST">
-              <input classs="user" type="text" name="signuser" placeholder="User Name" required />
-              <input class="passoword" type="password" name="signpass" placeholder="Password" required />
+              <div class="input"><input class="user" type="text" name="signuser" placeholder="User Name" required /></div>
+              <div class="input"><input class="passoword" type="password" name="signpass" placeholder="Password" required /></div>
               <input type="checkbox" name="remember" id="remember" /><label for="remember">Remember Me</label>
               <button type="submit">Sign In</button>
             </form>
@@ -60,8 +64,8 @@
           <div class="form">
             <p class="form__header">Recover Form</p>
             <form class="recovery" action="" method="POST">
-              <input class="email" type="email" name="rec_email" placeholder="Enter your email" />
-              <input class="tel" type="tel" name="tel" placeholder="Enter you phone number" />
+              <div class="input"><input class="email" type="email" name="rec_email" placeholder="Enter your email" /></div>
+              <div class="input"><input class="tel" type="tel" name="tel" placeholder="Enter you phone number" /></div>
               <button type="submit">Send</button>
               <button disabled>Done</button>
             </form>
@@ -69,7 +73,7 @@
           <div class="form">
             <p class="form__header">Subscribe Form</p>
             <form class="subscribe" action="" method="POST">
-              <input class="email" type="email" name="sub_email" placeholder="Enter your email" />
+              <div class="input"><input class="email" type="email" name="sub_email" placeholder="Enter your email" /></div>
               <button type="submit">Subscribe</button>
               <button clcass="button__refuse">No, Thanks</button>
             </form>

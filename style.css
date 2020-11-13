@@ -44,7 +44,8 @@ main {
 }
 
 form {
-  background-color: #fff;
+  background-color: #f4f4f4;
+  font-size: 13px;
   display: block;
   padding: 22px;
   width: 384px;
@@ -55,6 +56,10 @@ form {
   border: 18px solid rgba(0, 0, 0, 0.205);
 }
 
+div.input {
+  background-image: linear-gradient(0deg, #f4f4f4, white);
+}
+
 input:not([type='checkbox']),
 select {
   display: block;
@@ -62,6 +67,49 @@ select {
   width: 100%;
   height: 40px;
   margin-bottom: 20px;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  box-shadow: 1px 1px #fff;
+  background-color: transparent;
+  background-position: left 16px center;
+  background-repeat: no-repeat;
+}
+
+select,
+textarea::placeholder,
+input::placeholder {
+  font-size: 16px;
+  color: #afafaf;
+  font-weight: 300;
+}
+
+textarea.email__message {
+  background-color: transparent;
+  padding: 14px 16px;
+  border-radius: 3px;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  box-shadow: 1px 1px #fff;
+}
+
+input.user {
+  background-image: url(/img/icon_user.png);
+}
+
+input.passoword {
+  background-image: url(/img/icon_lock.png);
+  background-size: 21px;
+}
+
+input.email {
+  background-image: url(/img/icon_email.png);
+}
+input.tel {
+  background-image: url(/img/icon_phone.png);
+}
+
+select.map {
+  background-image: url(/img/icon_maps.png);
 }
 
 .email__message {
