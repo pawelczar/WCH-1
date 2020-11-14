@@ -151,6 +151,8 @@ select.map {
   color: #afafaf;
   font-weight: 300;
   margin-bottom: 12px;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 .checkbox-label.float {
@@ -162,24 +164,24 @@ select.map {
   cursor: pointer;
 }
 
-.checkbox-label::before {
-  content: '';
-  display: inline-block;
+.checkbox-label .tick {
+  margin-right: 15px;
   height: 23px;
   width: 23px;
-  margin-right: 15px;
   border-radius: 3px;
   filter: drop-shadow(1px 1.732px 0px #ffffff);
   background-image: linear-gradient(0deg, #f4f4f4 0%, #f8f8f8 100%);
   border: 1px solid #c6c6c6;
 }
 
- label.checkbox-label:hover::before{
-background-color: #ddd;
+ label.checkbox-label:hover .tick{
+background-color: #eee;
 background-image: none;
 }
 
-input:checked .checkbox-label::before{
-  background-color: orangered;
-  background-image: none;
+.checkbox-label input:checked ~.tick{
+  background-image: url(/img/tick.png);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: center;
 }
