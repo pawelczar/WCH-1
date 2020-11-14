@@ -118,6 +118,7 @@ input.user {
 input.passoword {
   background-image: url(/img/icon_lock.png);
   background-size: 21px;
+  background-position-x: 19px;
 }
 
 input.email {
@@ -125,10 +126,12 @@ input.email {
 }
 input.tel {
   background-image: url(/img/icon_phone.png);
+  background-position-x: 21px;
 }
 
 select.map {
   background-image: url(/img/icon_maps.png);
+  background-position-x: 21px;
 }
 
 .email__message {

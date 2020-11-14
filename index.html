@@ -32,8 +32,10 @@
                   <option value="warsaw">Warsaw</option>
                 </select>
               </div>
-              <input type="checkbox" name="terms" id="terms" />
-              <label for="terms">I have read and accepted terms of the use.</label>
+              <label class="checkbox-label" for="terms">
+                <input class="checkbox" type="checkbox" name="terms" id="terms" />
+                I have read and accepted terms of the use.
+              </label>
               <button type="submit">Sign Up</button>
             </form>
           </div>
@@ -45,7 +47,10 @@
               <div class="input">
                 <textarea class="email__message" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
               </div>
-              <input type="checkbox" name="sendme" id="sendme" /><label for="sendme">Send a copy to my email</label>
+              <label class="checkbox-label" for="sendme">
+                <input class="checkbox" type="checkbox" name="sendme" id="sendme" />
+                Send a copy to my email
+              </label>
               <button type="submit">Send Email</button>
             </form>
           </div>
@@ -56,7 +61,10 @@
             <form class="sign" action="" method="POST">
               <div class="input"><input class="user" type="text" name="signuser" placeholder="User Name" required /></div>
               <div class="input"><input class="passoword" type="password" name="signpass" placeholder="Password" required /></div>
-              <input type="checkbox" name="remember" id="remember" /><label for="remember">Remember Me</label>
+              <label class="checkbox-label" for="remember">
+                <input class="checkbox" type="checkbox" name="remember" id="remember" />
+                Remember Me
+              </label>
               <button type="submit">Sign In</button>
             </form>
           </div>
