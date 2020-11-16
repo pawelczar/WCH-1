@@ -49,7 +49,7 @@ form {
   font-size: 13px;
   display: block;
   padding: 22px;
-  width: 464px;
+  width: 403px;
   margin: 20px;
   margin-bottom: 30px;
   background-clip: padding-box;
@@ -92,8 +92,8 @@ select {
 input:focus,
 select:focus {
   outline: none;
+  box-shadow: 0 0 3px 2px #91cc1b;
   border: 1px solid olivedrab;
-  box-shadow: 0 0 3px #91cc1b;
 }
 
 select,
@@ -192,15 +192,60 @@ button{
   border: 1px solid #3a9a00;
   height: 49px;
   width: 149px;
+  cursor: pointer;
   color: #fff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
   font-size: 24px;
   border-radius: 3px;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 11px;
+  line-height: 24px;
+}
+button:focus{
+  outline: none;
+  box-shadow: 0 0 3px 2px #91cc1b;
+}
+
+button:active{
+  text-shadow: none;
+  box-shadow: 0 0 3px 2px #91cc1b, inset 0 0 3px 2px #c4e69e;
+
 }
 
 button.big{
   width: 100%;
+}
+
+button.right{
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+button.disabled{
+  background-image: linear-gradient(180deg, #acd183, #90ca6c);
+  border-color: #3a9a00;
+}
+
+button.reject{
+  background-image: linear-gradient(#f77483, #f13848);
+  border-color: #a21f2a;
+}
+
+
+button.reject:focus{
+  outline: none;
+  box-shadow: 0 0 3px 2px #df2a12;
+}
+
+button:active{
+  text-shadow: none;
+  box-shadow: 0 0 3px 2px #df2a12, inset 0 0 3px 2px #e69e9e;
+}
+
+.logo__bottom img{
+  filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1)) opacity(30%);
 }

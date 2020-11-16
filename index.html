@@ -58,14 +58,14 @@
         <section class="column">
           <div class="form">
             <p class="form__header">Sign In Form</p>
-            <form class="sign" action="" method="POST">
+            <form class="sign clearfix" action="" method="POST">
               <div class="input"><input class="user" type="text" name="signuser" placeholder="User Name" required /></div>
               <div class="input"><input class="passoword" type="password" name="signpass" placeholder="Password" required /></div>
               <label class="checkbox-label float" for="remember">Remember Me
                 <input class="checkbox" type="checkbox" name="remember" id="remember" />
                 <span class="tick"></span>
               </label>
-              <button type="submit">Sign In</button>
+              <button class="right" type="submit">Sign In</button>
             </form>
           </div>
           <div class="form">
@@ -74,7 +74,7 @@
               <div class="input"><input class="email" type="email" name="rec_email" placeholder="Enter your email" /></div>
               <div class="input"><input class="tel" type="tel" name="tel" placeholder="Enter you phone number" /></div>
               <button type="submit">Send</button>
-              <button disabled>Done</button>
+              <button class="right disabled" disabled tabindex="-1">Done</button>
             </form>
           </div>
           <div class="form">
@@ -82,7 +82,7 @@
             <form class="subscribe" action="" method="POST">
               <div class="input"><input class="email" type="email" name="sub_email" placeholder="Enter your email" /></div>
               <button type="submit">Subscribe</button>
-              <button clcass="button__refuse">No, Thanks</button>
+              <button class="right reject">No, Thanks</button>
             </form>
           </div>
           <div class="logo__bottom">
