@@ -22,10 +22,11 @@
 }
 
 main {
+  max-width: 1050px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 25px;
+  margin: 25px auto;
 }
 
 .column {
@@ -48,7 +49,7 @@ form {
   font-size: 13px;
   display: block;
   padding: 22px;
-  width: 384px;
+  width: 464px;
   margin: 20px;
   margin-bottom: 30px;
   background-clip: padding-box;
@@ -113,25 +114,25 @@ textarea.email__message {
 }
 
 input.user {
-  background-image: url(/img/icon_user.png);
+  background-image: url(./img/icon_user.png);
 }
 
 input.passoword {
-  background-image: url(/img/icon_lock.png);
+  background-image: url(./img/icon_lock.png);
   background-size: 21px;
   background-position-x: 19px;
 }
 
 input.email {
-  background-image: url(/img/icon_email.png);
+  background-image: url(./img/icon_email.png);
 }
 input.tel {
-  background-image: url(/img/icon_phone.png);
+  background-image: url(./img/icon_phone.png);
   background-position-x: 21px;
 }
 
 select.map {
-  background-image: url(/img/icon_maps.png);
+  background-image: url(./img/icon_maps.png);
   background-position-x: 21px;
 }
 
@@ -180,8 +181,26 @@ background-image: none;
 }
 
 .checkbox-label input:checked ~.tick{
-  background-image: url(/img/tick.png);
+  background-image: url(./img/tick.png);
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center;
+}
+
+button{
+  background-image: linear-gradient(0deg, #7ec31f, #a2d73f);
+  border: 1px solid #3a9a00;
+  height: 49px;
+  width: 149px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+  font-size: 24px;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 11px;
+}
+
+button.big{
+  width: 100%;
 }
