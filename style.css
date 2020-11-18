@@ -8,9 +8,10 @@
 .wrapper {
   display: block;
   min-height: 1372;
-  background: url('img/background.jpg') center/cover no-repeat;
+  background: url('img/Background.jpg') center/cover no-repeat;
   padding: 5px;
 }
+
 
 .logo__top {
   display: flex;
