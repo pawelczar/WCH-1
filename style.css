@@ -78,6 +78,7 @@ select {
   background-repeat: no-repeat;
 }
 
+
  div.input::before {
    content: '';
   content: linear-gradient(90deg, #fff, #cacaca);
@@ -96,6 +97,14 @@ select:focus {
   border: 1px solid olivedrab;
 }
 
+
+input[minlength]:invalid{
+
+  outline: none;
+  box-shadow: 0 0 3px 2px #cc1b1b;
+  border: 1px solid rgb(142, 35, 35);
+
+} 
 select,
 textarea::placeholder,
 input::placeholder {
