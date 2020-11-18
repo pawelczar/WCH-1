@@ -191,6 +191,11 @@ background-color: #eee;
 background-image: none;
 }
 
+label.checkbox-label input:focus ~.tick{
+    box-shadow: 0 0 3px 2px #91cc1b;
+    border: 1px solid olivedrab;
+}
+
 .checkbox-label input:checked ~.tick{
   background-image: url(./img/tick.png);
   background-repeat: no-repeat;
