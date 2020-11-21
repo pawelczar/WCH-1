@@ -17,12 +17,12 @@
           <div class="form">
             <p class="form__header">Register From</p>
             <form action="" method="POST" class="register">
-              <div class="input"><input class="user" type="text" placeholder="Username" name="username" required minlength="4"/></div>
-              <div class="input"><input class="passoword" type="password" placeholder="Password" name="password" required minlength="8" /></div>
+              <div class="input"><input class="user" type="text" placeholder="Username" name="username"  minlength="4"/></div>
+              <div class="input"><input class="passoword" type="password" placeholder="Password" name="password"  minlength="8" /></div>
               <div class="input">
-                <input class="passoword" type="password" placeholder="confirm Password" name="confirm" required minlength="8" />
+                <input class="passoword" type="password" placeholder="Confirm Password" name="confirm" minlength="8" />
               </div>
-              <div class="input"><input class="email" type="email" placeholder="Email" name="email" required /></div>
+              <div class="input"><input class="email" type="email" placeholder="Email" name="email" /></div>
               <div class="input">
                 <select class="map" name="location" id="location">
                   <option value="">Your Location</option>
@@ -42,8 +42,8 @@
           <div class="form">
             <p class="form__header">Send Email</p>
             <form action="" method="POST" class="email">
-              <div class="input"><input class="user" name="name" type="text" placeholder="Your Name" required /></div>
-              <div class="input"><input class="email" type="email" name="email" placeholder="Yor email" required /></div>
+              <div class="input"><input class="user" name="name" type="text" placeholder="Your Name" minlength="4" /></div>
+              <div class="input"><input class="email" type="email" name="email" placeholder="Yor email"  /></div>
               <div class="text">
                 <textarea class="email__message" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
               </div>
@@ -59,8 +59,8 @@
           <div class="form">
             <p class="form__header">Sign In Form</p>
             <form class="sign clearfix" action="" method="POST">
-              <div class="input"><input class="user" type="text" name="signuser" placeholder="User Name" required minlength="4" /></div>
-              <div class="input"><input class="passoword" type="password" name="signpass" placeholder="Password" required minlength="8"/></div>
+              <div class="input"><input class="user" type="text" name="signuser" placeholder="User Name" minlength="4" /></div>
+              <div class="input"><input class="passoword" type="password" name="signpass" placeholder="Password" minlength="8"/></div>
               <label class="checkbox-label float" for="remember">Remember Me
                 <input class="checkbox" type="checkbox" name="remember" id="remember" />
                 <span class="tick"></span>

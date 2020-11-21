@@ -92,14 +92,14 @@ select {
 }
 
 input:focus,
-select:focus {
+select:focus, textarea.email__message:focus {
   outline: none;
   box-shadow: 0 0 3px 2px #91cc1b;
   border: 1px solid olivedrab;
 }
 
 
-input[minlength]:invalid{
+input[minlength]:invalid, input[type='email']:invalid{
 
   outline: none;
   box-shadow: 0 0 3px 2px #cc1b1b;
@@ -273,8 +273,9 @@ button.reject:active{
 /*************media querys******************/
 
 @media (max-width: 865px){
-  .logo__top{
-    height: 95px;
+  .logo__top img{
+    height: 100%;
+    width: auto;
 
   }
   main{
@@ -290,8 +291,9 @@ button.reject:active{
 
 
 @media (max-width: 445px){
-  .logo__top{
+  .logo__top img{
     height: 80px;
+    width: auto;
   }
 
   form {
