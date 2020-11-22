@@ -81,14 +81,15 @@ select {
 
 
  div.input::before {
-   content: '';
-  content: linear-gradient(90deg, #fff, #cacaca);
+   /* content: ''; */
+  content: '';
   display: block;
   position: absolute;
   top: 6px;
   left: 58px;
   height: 31px;
   width: 2px;
+  background-image: linear-gradient(90deg, #eee, #bbb);
 }
 
 input:focus,
@@ -99,8 +100,8 @@ select:focus, textarea.email__message:focus {
 }
 
 
-input[minlength]:invalid, input[type='email']:invalid{
-
+input[minlength]:invalid, 
+input[type='email']:invalid{
   outline: none;
   box-shadow: 0 0 3px 2px #cc1b1b;
   border: 1px solid rgb(142, 35, 35);
@@ -187,8 +188,8 @@ select.map {
 }
 
  label.checkbox-label:hover .tick{
-background-color: #eee;
-background-image: none;
+  background-color: #eee;
+  background-image: none;
 }
 
 label.checkbox-label input:focus ~.tick{
@@ -264,10 +265,10 @@ button.reject:active{
 }
 
 .logo__bottom{
- filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1));
+  filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1));
   height: 130px;
   width: 353px;
- mix-blend-mode: overlay ;
+  mix-blend-mode: overlay ;
 }
 
 /*************media querys******************/
