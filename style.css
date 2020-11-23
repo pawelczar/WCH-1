@@ -19,7 +19,8 @@
   height: 111px;
   left: 50px;
   margin-top: 50px;
-  filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1)) opacity(30%);
+  -webkit-filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1)) opacity(30%);
+          filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1)) opacity(30%);
 }
 
 .content {
@@ -86,7 +87,9 @@ input:not([type='checkbox']),
 }
 
 .map {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 div.input:nth-child(5)::after{
@@ -127,6 +130,26 @@ input[type='email']:invalid{
   box-shadow: 0 0 3px 2px #cc1b1b;
   border: 1px solid rgb(142, 35, 35);
 
+} 
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #afafaf;
+  font-weight: 300;
+} 
+textarea::-moz-placeholder, input::-moz-placeholder {
+  font-size: 1rem;
+  color: #afafaf;
+  font-weight: 300;
+} 
+textarea:-ms-input-placeholder, input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #afafaf;
+  font-weight: 300;
+} 
+textarea::-ms-input-placeholder, input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #afafaf;
+  font-weight: 300;
 } 
 .map,
 textarea::placeholder,
@@ -203,7 +226,8 @@ select.map {
   height: 23px;
   width: 23px;
   border-radius: 3px;
-  filter: drop-shadow(1px 1.732px 0px #ffffff);
+  -webkit-filter: drop-shadow(1px 1.732px 0px #ffffff);
+          filter: drop-shadow(1px 1.732px 0px #ffffff);
   background-image: linear-gradient(0deg, #f4f4f4 0%, #f8f8f8 100%);
   border: 1px solid #c6c6c6;
 }
@@ -286,7 +310,8 @@ button.reject:active{
 }
 
 .logo__bottom{
-  filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1));
+  -webkit-filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1));
+          filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1));
   height: 130px;
   width: 353px;
   mix-blend-mode: overlay ;
