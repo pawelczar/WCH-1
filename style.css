@@ -22,7 +22,7 @@
   filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1)) opacity(30%);
 }
 
-main {
+.content {
   max-width: 1050px;
   display: flex;
   justify-content: space-around;
@@ -30,7 +30,7 @@ main {
   margin: 25px auto;
 }
 
-.column {
+.content_column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,15 +39,16 @@ main {
 
 .form__header {
   color: #fff;
-  font-size: 32px;
+  font-weight: 300;
+  font-size: 2rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
   margin-bottom: 20px;
   text-align: center;
 }
 
-form {
+.form__conent {
   background-color: #f4f4f4;
-  font-size: 13px;
+  font-size: 0.8125rem;
   display: block;
   padding: 22px;
   width: 403px;
@@ -58,13 +59,18 @@ form {
   border: 18px solid rgba(0, 0, 0, 0.205);
 }
 
+.sr-only {
+  position: absolute;
+  visibility: hidden;
+}
+
 div.input, textarea {
   position: relative;
   background-image: linear-gradient(0deg, #f4f4f4, white);
 }
 
 input:not([type='checkbox']),
-select {
+.map {
   display: block;
   position: relative;
   padding-left: 81px;
@@ -79,9 +85,24 @@ select {
   background-repeat: no-repeat;
 }
 
+.map {
+  appearance: none;
+}
+
+div.input:nth-child(5)::after{
+  content: '';
+  position: absolute;
+  top: 17px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  right: 20px;
+  border-color: #c6c6c6 transparent;
+}
+
 
  div.input::before {
-   /* content: ''; */
   content: '';
   display: block;
   position: absolute;
@@ -93,7 +114,7 @@ select {
 }
 
 input:focus,
-select:focus, textarea.email__message:focus {
+.map:focus, textarea.email__message:focus {
   outline: none;
   box-shadow: 0 0 3px 2px #91cc1b;
   border: 1px solid olivedrab;
@@ -107,10 +128,10 @@ input[type='email']:invalid{
   border: 1px solid rgb(142, 35, 35);
 
 } 
-select,
+.map,
 textarea::placeholder,
 input::placeholder {
-  font-size: 16px;
+  font-size: 1rem;
   color: #afafaf;
   font-weight: 300;
 }
@@ -159,7 +180,7 @@ select.map {
   align-items: center;
   position: relative;
   height: 23px;
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: #afafaf;
   font-weight: 300;
   margin-bottom: 12px;
@@ -279,9 +300,13 @@ button.reject:active{
     width: auto;
 
   }
-  main{
+  .content{
     flex-direction: column;
     align-items: center;
+  }
+
+  .logo__bottom{
+    margin: 0 auto;
   }
 
   .logo__bottom img{
@@ -309,6 +334,10 @@ button.reject:active{
   label +button.right{
     width: 100%;
     max-width: 100%;
+  }
+
+  .logo__bottom{
+    margin: 0 auto;
   }
 
   .logo__bottom img{

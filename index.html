@@ -9,22 +9,32 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="logo__top">
-        <img src="img/Logo top.png" alt="logo" />
-      </div>
+      <header class="logo__top">
+        <img src="img/Logo top.png" alt="lizar in black circle and black sign masterlab as a logo" />
+      </header>
       <main class="content">
-        <section class="column">
+        <div class="content__column">
           <div class="form">
             <p class="form__header">Register From</p>
-            <form action="" method="POST" class="register">
-              <div class="input"><input class="user" type="text" placeholder="Username" name="username"  minlength="4"/></div>
-              <div class="input"><input class="passoword" type="password" placeholder="Password" name="password"  minlength="8" /></div>
+            <form class="form__conent" action="" method="POST" class="register">
               <div class="input">
-                <input class="passoword" type="password" placeholder="Confirm Password" name="confirm" minlength="8" />
+                <label class="form__label sr-only" for="username">username</label>
+                <input class="user" type="text" placeholder="Username" name="username"  id="username" minlength="4"/>
               </div>
-              <div class="input"><input class="email" type="email" placeholder="Email" name="email" /></div>
               <div class="input">
-                <select class="map" name="location" id="location">
+                <label class="form__label sr-only" for="passoword">passoword</label>
+                <input class="passoword" id="password" type="password" placeholder="Password" name="password"  minlength="8" />
+              </div>
+              <div class="input">
+                <label class="form__label sr-only" for="confirmation">confirmation</label>
+                <input class="passoword" id="confirmation" type="password" placeholder="Confirm Password" name="confirm" minlength="8" />
+              </div>
+              <div class="input">
+                <label class="form__label sr-only" for="email">email</label>
+                <input class="email" id="email" type="email" placeholder="Email" name="email" /></div>
+              <div class="input">
+                <label class="form__label sr-only" for="location">location</label>
+                <select class="map" id="location" name="location" id="location">
                   <option value="">Your Location</option>
                   <option value="newyork">New York</option>
                   <option value="longdon">London</option>
@@ -41,9 +51,15 @@
           </div>
           <div class="form">
             <p class="form__header">Send Email</p>
-            <form action="" method="POST" class="email">
-              <div class="input"><input class="user" name="name" type="text" placeholder="Your Name" minlength="4" /></div>
-              <div class="input"><input class="email" type="email" name="email" placeholder="Yor email"  /></div>
+            <form class="form__conent" action="" method="POST" class="email">
+              <div class="input">
+                <label class="form__label sr-only" for="your-name">your name</label>
+                <input class="user" id="your-name" name="name" type="text" placeholder="Your Name" minlength="4" />
+              </div>
+              <div class="input">
+                <label class="form__label sr-only" for="send-email">email</label>
+                <input class="email" id="send-email" type="email" name="email" placeholder="Yor email"  />
+              </div>
               <div class="text">
                 <textarea class="email__message" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
               </div>
@@ -54,13 +70,19 @@
               <button class="big" type="submit">Send Email</button>
             </form>
           </div>
-        </section>
-        <section class="column">
+        </div>
+        <div class="content__column">
           <div class="form">
             <p class="form__header">Sign In Form</p>
-            <form class="sign clearfix" action="" method="POST">
-              <div class="input"><input class="user" type="text" name="signuser" placeholder="User Name" minlength="4" /></div>
-              <div class="input"><input class="passoword" type="password" name="signpass" placeholder="Password" minlength="8"/></div>
+            <form class="form__conent sign clearfix" action="" method="POST">
+              <div class="input">
+                <label class="form__label sr-only" for="user-name">username</label>
+                <input class="user" id="user-name" type="text" name="signuser" placeholder="User Name" minlength="4" />
+              </div>
+              <div class="input">
+                <label class="form__label sr-only" for="usrpassword">password</label>
+                <input class="passoword" id="usrpassword" type="password" name="signpass" placeholder="Password" minlength="8"/>
+              </div>
               <label class="checkbox-label float" for="remember">Remember Me
                 <input class="checkbox" type="checkbox" name="remember" id="remember" />
                 <span class="tick"></span>
@@ -70,25 +92,34 @@
           </div>
           <div class="form">
             <p class="form__header">Recover Form</p>
-            <form class="recovery" action="" method="POST">
-              <div class="input"><input class="email" type="email" name="rec_email" placeholder="Enter your email" /></div>
-              <div class="input"><input class="tel" type="tel" name="tel" placeholder="Enter you phone number" /></div>
+            <form class="form__conent recovery" action="" method="POST">
+              <div class="input">
+                <label class="form__label sr-only" for="user-email">email</label>
+                <input class="email" id="user-email" type="email" name="rec_email" placeholder="Enter your email" />
+              </div>
+              <div class="input">
+                <label class="form__label sr-only" for="telephone">telephone</label>
+                <input class="tel" id="telephone" type="tel" name="tel" placeholder="Enter you phone number" />
+              </div>
               <button type="submit">Send</button>
               <button class="right disabled" disabled tabindex="-1">Done</button>
             </form>
           </div>
           <div class="form">
             <p class="form__header">Subscribe Form</p>
-            <form class="subscribe" action="" method="POST">
-              <div class="input"><input class="email" type="email" name="sub_email" placeholder="Enter your email" /></div>
+            <form class="form__conent subscribe" action="" method="POST">
+              <div class="input">
+                <label class="form__label sr-only" for="email-susbscribe">email</label>
+                <input class="email" id="email-susbscribe" type="email" name="sub_email" placeholder="Enter your email" />
+              </div>
               <button type="submit">Subscribe</button>
               <button class="right reject">No, Thanks</button>
             </form>
           </div>
-          <div class="logo__bottom">
-            <img src="img/Logo bottom.png" alt="" />
-          </div>
-        </section>
+          <footer class="logo__bottom">
+            <img src="img/Logo bottom.png" alt="lizar in black circle and black sign masterlab as a logo" />
+          </footer>
+        </div>
       </main>
     </div>
   </body>
