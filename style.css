@@ -62,7 +62,11 @@
 
 .sr-only {
   position: absolute;
-  visibility: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
 }
 
 div.input, textarea {

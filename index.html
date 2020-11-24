@@ -22,7 +22,7 @@
                 <input class="user" type="text" placeholder="Username" name="username"  id="username" minlength="4"/>
               </div>
               <div class="input">
-                <label class="form__label sr-only" for="passoword">passoword</label>
+                <label class="form__label sr-only" for="password">passoword</label>
                 <input class="passoword" id="password" type="password" placeholder="Password" name="password"  minlength="8" />
               </div>
               <div class="input">
@@ -61,7 +61,8 @@
                 <input class="email" id="send-email" type="email" name="email" placeholder="Yor email"  />
               </div>
               <div class="text">
-                <textarea class="email__message" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                <label class="sr-only" for="message">Message</label>
+                <textarea id="message" class="email__message" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
               </div>
               <label class="checkbox-label" for="sendme">Send a copy to my email
                 <input class="checkbox" type="checkbox" name="sendme" id="sendme" />
