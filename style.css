@@ -99,6 +99,7 @@ input:not([type='checkbox']),
 div.input:nth-child(5)::after{
   content: '';
   position: absolute;
+  pointer-events: none;
   top: 17px;
   width: 0;
   height: 0;
