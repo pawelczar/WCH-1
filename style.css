@@ -61,7 +61,11 @@
 
 .sr-only {
 	position: absolute;
-	visibility: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
 }
 
 div.input,
@@ -95,6 +99,7 @@ input:not([type="checkbox"]),
 div.input:nth-child(5)::after {
 	content: "";
 	position: absolute;
+	pointer-events: none;
 	top: 17px;
 	width: 0;
 	height: 0;
